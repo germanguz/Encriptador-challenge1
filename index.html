@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Encriptador</title>
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="imagenes/Logo.png" alt="logo de Alura">
+    </header>
+
+    <main>
+        <section class="izquierda">
+
+            <textarea class="msjInicial" id="mensaje" cols="30" rows="9" placeholder="Ingrese el texto aquí"></textarea>
+            <label class="labelAdv" for="mensaje"><img src="imagenes/!.png" alt="advertencia">Solo letras minúsculas y
+                sin acentos</label>
+
+            <button class="botonEnc">Encriptar</button>
+            <button class="botonDes" id="des">Desencriptar</button>
+        </section>
+
+        <section class="derecha">
+
+            <div id="aparece-imagen" class="imagen-derecha">
+                <img src="imagenes/Muneco.png" alt="">
+                <img src="imagenes/mensaje.png" alt="">
+            </div>
+
+            <div id="aparece-texto">
+                <label for="resultado"></label>
+                <textarea class="msjFinal" name="" id="resultado" cols="25" rows="9"
+                    placeholder="Ningún mensaje"></textarea>
+
+                <button class="botonCop" id="copiar">Copiar</button>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>Germán Guzmán - Alura-Oracle ONE 2022</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
