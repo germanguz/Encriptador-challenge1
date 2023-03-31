@@ -12,24 +12,28 @@
 
 <body>
     <header>
-        <img class="logo" src="imagenes/Logo.png" alt="logo de Alura">
+        <img class="logo" src="imagenes/logo.png" alt="logo de Alura">
     </header>
 
     <main>
-        <section class="izquierda">
+        <div class="izquierda">
+            <div class="textMsjLabel">
 
-            <textarea class="msjInicial" id="mensaje" cols="30" rows="9" placeholder="Ingrese el texto aquí"></textarea>
-            <label class="labelAdv" for="mensaje"><img src="imagenes/!.png" alt="advertencia">Solo letras minúsculas y
-                sin acentos</label>
+                <textarea class="msjInicial" id="mensaje" cols="30" rows="9" placeholder="Ingrese el texto aquí"></textarea>
+                <label class="labelAdv" for="mensaje"><img src="imagenes/!.png" alt="advertencia">Solo letras minúsculas y
+                    sin acentos</label>
+            </div>
+            <div class="botones">
+                <button class="botonEnc">Encriptar</button>
+                <button class="botonDes" id="des">Desencriptar</button>
 
-            <button class="botonEnc">Encriptar</button>
-            <button class="botonDes" id="des">Desencriptar</button>
-        </section>
+            </div> 
+        </div>
 
         <section class="derecha">
 
             <div id="aparece-imagen" class="imagen-derecha">
-                <img src="imagenes/Muneco.png" alt="">
+                <img src="imagenes/muneco.png" alt="">
                 <img src="imagenes/mensaje.png" alt="">
             </div>
 

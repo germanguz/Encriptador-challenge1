@@ -1,18 +1,54 @@
 body {
     background: #E9ECF8;
     font-family: 'Ubuntu', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .logo {
     margin: 10px 0 20px;
 }
 
+main {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-around;
+}
+
+.textMsjLabel {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.botones {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.izquierda {
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+
+
+
 .derecha {
-    position: absolute;
+    /* position: absolute; */
     width: 420px;
     height: 550px;
-    left: 60%;
-    top: 60px;
+    /* left: 60%; */
+    /* top: 60px; */
     background: #FFFFFF;
     border-radius: 30px;
     box-shadow: 0px 2px 20px 0px #0A3871;
@@ -23,16 +59,16 @@ body {
     background-color: transparent;
     border: none;
     outline: none;
-    margin: 0 200px 0;
+    /* margin: 0 200px 0; */
     font-family: 'Ubuntu', sans-serif;
     font-size: 30px;
     color: #0A3871;
 }
 
 .labelAdv {
-    display: block;
-    margin-left: 200px;
-    margin-top: 5px;
+    /* display: block; */
+    /* margin-left: 200px; */
+    /* margin-top: 5px; */
 }
 
 .msjFinal {
@@ -48,7 +84,7 @@ body {
 }
 
 .imagen-derecha {
-    margin: 50px ;
+    /* margin: 50px ; */
 }
 
 .botonEnc {
@@ -58,7 +94,7 @@ body {
     height: 67px;
     border-radius: 24px;
     font-size: 28px;
-    margin: 20px 20px 20px 90px;
+    /* margin: 20px 20px 20px 90px; */
     font-family: 'Ubuntu', sans-serif;
 }
 
@@ -89,8 +125,8 @@ body {
     height: 67px;
     border-radius: 24px;
     font-size: 28px;
-    margin-left: 90px;
-    margin-top: 40px;
+    /* margin-left: 90px; */
+    /* margin-top: 40px; */
     font-family: 'Ubuntu', sans-serif;
 }
 
@@ -102,7 +138,7 @@ body {
 
 p {
     text-align: center;
-    margin-top: 80px;
+    /* margin-top: 80px; */
 }
 
 @media screen and (max-width: 1364px) {
