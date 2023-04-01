@@ -1,4 +1,5 @@
 body {
+    margin: 0;
     background: #E9ECF8;
     font-family: 'Ubuntu', sans-serif;
     min-height: 100vh;
@@ -7,51 +8,29 @@ body {
 }
 
 .logo {
-    margin: 10px 0 20px;
+    margin: 20px 0;
 }
 
 main {
     flex-grow: 1;
     display: flex;
-    justify-content: space-around;
-}
-
-.textMsjLabel {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.botones {
-    display: flex;
     justify-content: space-evenly;
-    gap: 20px;
 }
 
 .izquierda {
     height: 550px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    /* justify-content: space-between;
+    (el flex-grow de textMsjLabel empuja hacia abajo y lo hace innecesario)*/
 }
 
-
-
-
-
-
-
-
-
-.derecha {
-    /* position: absolute; */
-    width: 420px;
-    height: 550px;
-    /* left: 60%; */
-    /* top: 60px; */
-    background: #FFFFFF;
-    border-radius: 30px;
-    box-shadow: 0px 2px 20px 0px #0A3871;
+.textMsjLabel {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+    padding-bottom: 5px;
 }
 
 .msjInicial {
@@ -59,32 +38,20 @@ main {
     background-color: transparent;
     border: none;
     outline: none;
-    /* margin: 0 200px 0; */
     font-family: 'Ubuntu', sans-serif;
-    font-size: 30px;
+    font-size: 40px;
     color: #0A3871;
+    margin: 30px 0 0 80px;
 }
 
 .labelAdv {
-    /* display: block; */
-    /* margin-left: 200px; */
-    /* margin-top: 5px; */
+    font-size: 18px;
 }
 
-.msjFinal {
-    resize: none;
-    margin-top: 78px;
-    margin-left: 2%;
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 30px;
-    text-align: center;
-    color: #0A3871;
-    border: none;
-    outline: none;
-}
-
-.imagen-derecha {
-    /* margin: 50px ; */
+.botones {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 30px;
 }
 
 .botonEnc {
@@ -94,7 +61,6 @@ main {
     height: 67px;
     border-radius: 24px;
     font-size: 28px;
-    /* margin: 20px 20px 20px 90px; */
     font-family: 'Ubuntu', sans-serif;
 }
 
@@ -119,14 +85,43 @@ main {
     cursor: pointer;
 }
 
+/* *======================================= */
+
+.derecha {
+    width: 420px;
+    height: 650px;
+    margin-top: -50px;
+    background: #FFFFFF;
+    border-radius: 30px;
+    box-shadow: 0px 2px 20px 0px #0A3871;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.texto-derecha {
+    flex-direction: column;
+    align-items: center;
+}
+
+.msjFinal {
+    resize: none;
+    margin-top: 37px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    color: #0A3871;
+    border: none;
+    outline: none;
+    height: 441px;
+}
+
 .botonCop {
     background: #D8DFE8;
     width: 228px;
     height: 67px;
     border-radius: 24px;
     font-size: 28px;
-    /* margin-left: 90px; */
-    /* margin-top: 40px; */
     font-family: 'Ubuntu', sans-serif;
 }
 
@@ -138,18 +133,233 @@ main {
 
 p {
     text-align: center;
-    /* margin-top: 80px; */
 }
 
-@media screen and (max-width: 1364px) {
+/* *=================================== */
+
+@media only screen and (max-width: 1368px) {
+    .izquierda {
+        height: 495px;
+    }
+
+    .derecha {
+        height: 575px;
+        margin-top: -50px;
+    }
+
+    .msjFinal {
+        margin-top: 60px;
+        height: 385px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .msjInicial {
+        width: 450px;
+        font-size: 30px;
+        margin: 30px 0 0 50px;
+    }
+
+    .derecha {
+        width: 360px;
+        height: 575px;
+    }
+
+    .imagen-derecha {
+        width: 280px;
+    }
+
+    .msjFinal {
+        margin-top: 50px;
+        width: 290px;
+        height: 400px;
+        font-size: 28px;
+    }
+
+    .botones {
+        gap: 20px;
+    }
+
     .botonEnc {
         width: 250px;
         height: 60px;
     }
-        
+
     .botonDes {
         width: 250px;
         height: 60px;
     }
+
+    .botonCop {
+        width: 200px;
+        height: 60px;
+    }
 }
 
+@media only screen and (max-width: 930px) {
+    .izquierda {
+        height: 400px;
+    }
+
+    .msjInicial {
+        width: 370px;
+        font-size: 24px;
+        margin: 30px 0 0 20px;
+    }
+
+    .labelAdv {
+        font-size: 14px;
+    }
+
+    .derecha {
+        width: 290px;
+        height: 475px;
+        margin-top: -50px;
+    }
+
+    .imagen-derecha {
+        width: 210px;
+    }
+
+    .msjFinal {
+        margin-top: 55px;
+        width: 275px;
+        height: 320px;
+        font-size: 20px;
+    }
+
+    .botones {
+        gap: 10px;
+    }
+
+    .botonEnc {
+        width: 180px;
+        height: 45px;
+        border-radius: 20px;
+        font-size: 20px;
+    }
+
+    .botonDes {
+        width: 180px;
+        height: 45px;
+        border-radius: 20px;
+        font-size: 20px;
+    }
+
+    .botonCop {
+        width: 150px;
+        height: 45px;
+        border-radius: 20px;
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    .logo {
+        margin: 10px 0;
+        width: 180px;
+    }
+
+    .izquierda {
+        height: 320px;
+    }
+
+    .msjInicial {
+        width: 260px;
+        height: 150px;
+        font-size: 20px;
+        margin: 20px 0 0 10px;
+    }
+
+    .labelAdv {
+        font-size: 12px;
+        align-self: center;
+    }
+
+    .derecha {
+        width: 240px;
+        height: 380px;
+        margin-top: -50px;
+    }
+
+    .imagen-derecha {
+        width: 200px;
+    }
+
+    figure {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .msjFinal {
+        margin-top: 50px;
+        width: 230px;
+        height: 260px;
+    }
+
+    .botones {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    header {
+        display: flex;
+        justify-content: center;
+    }
+
+    main {
+        justify-content: unset;
+        flex-direction: column;
+    }
+
+    .izquierda {
+        height: 180px;
+        align-items: center;
+    }
+
+    .msjInicial {
+        height: 50px;
+        margin: 0;
+    }
+
+    .labelAdv {
+        font-size: 12px;
+    }
+
+    .derecha {
+        height: 300px;
+        margin: 40px auto;
+    }
+
+    .msjFinal {
+        margin-top: 0;
+        height: 200px;
+        font-size: 20px;
+    }
+
+    .botones {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .botonEnc {
+        width: 220px;
+        height: 45px;
+        border-radius: 20px;
+        font-size: 20px;
+    }
+        
+    .botonDes {
+        width: 220px;
+        height: 45px;
+        border-radius: 20px;
+        font-size: 20px;
+    }
+    
+    p {
+        font-size: 14px;
+    }
+}

@@ -111,7 +111,7 @@ function copiar() {
 }
 
 function aparece() {
-    document.getElementById("aparece-texto").style.display = 'block';
+    document.getElementById("aparece-texto").style.display = 'flex';
     document.getElementById("aparece-imagen").style.display = 'none';
 }
 
