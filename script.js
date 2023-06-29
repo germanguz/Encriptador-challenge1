@@ -16,14 +16,14 @@ function encriptar() {
                 textarea.value = textarea.value.replaceAll(matrizDeCambio[i][0], matrizDeCambio[i][1])
             }
         }
+        frase = textarea.value;
+        encriptado.innerHTML = frase;
+        aparece();
     } else {
         alert("Solo ingresar letras en minúscula y sin acentos o caracteres especiales");
         textarea.focus();
     }
-    frase = textarea.value;
-    encriptado.innerHTML = frase;
     textarea.value = "";
-    aparece();
 }
 
 function desencriptar() {
